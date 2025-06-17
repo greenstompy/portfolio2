@@ -1,0 +1,197 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/*headerについて*/
+header{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.header-title{
+    text-align: center;
+}
+
+.header-title a{
+    color: black;
+    text-align: center;
+}
+
+.header-menu{
+    background-color: black;
+    justify-content: center;
+    display: flex;
+}
+
+.menu{
+    display: inline-block;
+    position: relative;
+}
+
+.single{
+    position:relative;
+}
+
+.menu-second{
+    position: absolute;
+    top: 2.5rem;
+    left: -1px;
+    display: none;
+    background-color: gray;
+    width: 200px; /* 幅を固定（必要に応じて調整） */
+    padding: 10px 0; /* サブメニュー全体に上下のパディングを追加 */
+}
+
+.menu-second li{
+    text-align: left;
+    margin-left: 1rem;
+    display: block;
+    z-index: 1000;
+}
+
+.menu-second a{
+    display: block;
+}
+
+.menu-second.active{
+    display: block;
+}
+
+/*
+.single:hover .menu-second{
+    display: block;
+    transition: 3s;
+}
+    */
+
+/*main部分*/
+
+.main{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*main-visual*/
+
+.main-visual{
+    margin-bottom: 5vw;
+}
+
+.main-visual img{
+    width: 100vw;
+    height: 41vw;
+    object-fit: cover;
+}
+
+/*annnounce*/
+.announce {
+    text-align: center;
+    margin-bottom: 6vw;
+}
+
+.announcement{
+    width: 50vw;
+    height: 10vw;
+    margin: auto;
+    overflow-y: auto;
+}
+
+/*contents*/
+.contents{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    
+}
+.content{
+    width: calc((100%/3) - 2rem);
+    height: 20vw;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-right: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: middle;
+}
+
+.coc{
+    background-image: url("../images/coc-logo.jpeg");
+    background-color: black;
+}
+
+.sw{
+    background-image: url("../images/sw-top.jpeg");
+}
+
+.Taisho{
+    background-image: url("../images/taisho-logo.jpg");
+}
+
+.content h3{
+    -webkit-text-stroke: 1px black;
+}
+
+
+
+.content a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content:hover{
+    opacity: 0.5;
+    transition: .8s;
+}
+
+.content:nth-child(3n){
+    margin-right: 0;
+}
+
+footer{
+    width: 100vw;
+    margin: 0;
+    padding: 0 0 10px 0;
+    background-color: gray;
+}
+
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    font-size: 24px;
+    color: white;
+}
